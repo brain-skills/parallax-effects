@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+}
+
+.mouse_move {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mouse_move h2 {position: relative;font-size: 32px;}
+.mouse_move img {position: absolute;}
+#img1 {top: 80px;left: 80px;}
+#img2 {bottom: 80px;right: 80px;}
+#img3 {top: 80px;right: 80px;}
+#img4 {bottom: 80px;left: 80px;}
+
+.rotatecircle {
+  animation-name: circle;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes circle {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+.icon {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon .svg-icon{
+  width: 100px;
+}
